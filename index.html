@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The API CHANLLANGE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1 class="text-center text-3xl font-bold">Rest Countries API</h1>
+
+    <section>
+      <main class="w-3/4 mx-auto">
+        <select
+          id="my-region-select"
+          onchange="myCountrySelect()"
+          class="select select-accent w-full max-w-xs"
+        >
+          <option value="">--Please choose an option--</option>
+          <option value="Africa">Africa</option>
+          <option value="Americas">Americas</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+        <div id="card-parent" class="grid grid-cols-3 gap-4 my-9">
+           
+          <!-- <button
+            class="bg-red-600 text-white px-3 py-2 text-xl font-semibold"
+            onclick="loadCountries();"
+          >
+            Click
+          </button> -->
+        </div>
+      </main>
+    </section>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
